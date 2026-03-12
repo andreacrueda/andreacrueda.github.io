@@ -13,7 +13,7 @@ html, body {
 }
 
 body {
-    background: linear-gradient(rgba(44,39,48,0.7), rgba(44,39,48,0.7)), url("Backgrounds/purpleBunnyButterfly.png");
+    background: linear-gradient(rgba(44,39,48,0.7), rgba(44,39,48,0.7)), url("Backgrounds/artnuveau.jpg");
     display: flex;
     flex-direction: column;
     min-height: 100vh;
