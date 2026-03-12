@@ -62,7 +62,8 @@ p a:hover {
 
 .wrapper {
     display: flex;
-    align-items: flex-start; 
+    align-items: center; 
+    justify-content: center;
     gap: 30px;              
     margin-bottom: 20px;
 }
@@ -72,6 +73,9 @@ p a:hover {
 }
 
 .wrapper-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex: 1; 
     max-width: 300px; 
 }
