@@ -9,6 +9,7 @@
     <div> defines a new section in HTML, so groups of things, like lists of links, should be in the same <div> tag
     when in doubt, check the file locally in the broswer to see what it looks like
     by default, web browsers put a line break before and after <div> tags, so they can be used for formatting
+
     within the <div> tag, you can define what CSS class you want to use inside that section, as well as custom formatting not 
     specified in the CSS (making a certain instance of a class in your HTML have a different text color for example)
 
@@ -22,8 +23,12 @@
         
         STUFF INSIDE THE SECTION GOES HERE, BUT RIGHT ALIGNED!
 
-        <p> defines a paragraph, kind of self explanatory, browsers add a blank line before and after <p></p>
+        <p> defines a generic paragraph, kind of self explanatory, browsers add a blank line before and after <p></p>
         you can also specify styles in the <p> tag, the same way you did in <div>
+
+        dont specify specific CSS classes inside the <p> tag though, the <p> tag has its own CSS rules which you can change
+        in the HTML by speficying style
+
         if you find yourself doing the same styling in the <p> tag over and over, it might be time to make it a CSS class!
 
         <a> is our generic hyperlink tag, whenever you want to link something, wrap it in the <a> tag
