@@ -46,7 +46,9 @@ main {
     border-radius: 5px;
     border-color: var(--barbie);
     position: relative;
-    
+    box-shadow:
+    0 20px 40px rgba(0,0,0,0.6),
+    0 10px 15px rgba(0,0,0,0.4);
 }
 
 p a {
@@ -54,8 +56,9 @@ p a {
   text-decoration: none;
   font-weight: bold;
   padding: 5px;
-  transition: all 0.2s ease;
+  transition: all 0.1s ease;
   border: 2px solid transparent;
+  border-radius: 14px;
 }
 
 p a:hover {
@@ -63,8 +66,11 @@ p a:hover {
   background-color: var(--barbie);
   text-decoration: none;
   border: 2px inset var(--barbie);
-  border-radius: 4px;
+  border-radius: 14px;
   padding: 5px;
+  box-shadow:
+  0 0 40px rgba(0,0,0,0.6),
+  0 0 25px var(--lavenderMist);
 }
 
 p a:visited {
@@ -76,6 +82,9 @@ p a:visited {
 p a:hover, p a:visited:hover {
     color: var(--butterflyMainBackground);
     padding: 5px;
+    box-shadow:
+    0 0 40px rgba(0,0,0,0.6),
+    0 0 25px var(--lavenderMist);
 }
 
 .wrapper {
@@ -103,6 +112,9 @@ p a:hover, p a:visited:hover {
     height: auto;
     border-radius: 5px; 
     border: 3px ridge var(--barbie);
+    box-shadow:
+    0 20px 40px rgba(0,0,0,0.6),
+    0 10px 15px rgba(0,0,0,0.4);
 }
 
 .hover-img-container {
@@ -196,6 +208,8 @@ p a:hover, p a:visited:hover {
   transition: all 0.2s ease;
   padding: 5px;
   font-weight: bold;
+  box-shadow:
+  2px 2px 10px rgba(0,0,0,0.6);
 }
 
 .return-button:hover {
@@ -204,6 +218,9 @@ p a:hover, p a:visited:hover {
   border: 2px inset var(--barbie);
   border-radius: 4px;
   padding: 5px;
+  box-shadow:
+  0 0 40px rgba(0,0,0,0.6),
+  0 0 25px var(--lavenderMist);
 }
 
 footer {
