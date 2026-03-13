@@ -1,4 +1,31 @@
-<!-- Copy and paste this into a new html file, name it whatever you want.html, then create a button that links to it in index.html -->
+<!-- 
+    Copy and paste this into a new HTML file, 
+    name it whatever you want.html, 
+    then create a button that links to it in index.html 
+
+    <div> defines a new section in HTML, so groups of things, like lists of links, should be in the same <div> tag
+    when in doubt, check the file locally in the broswer to see what it looks like
+    by default, web browsers put a line break before and after <div> tags, so they can be used for formatting
+    within the <div> tag, you can define what CSS class you want to use inside that section, as well as custom formatting not 
+    specified in the CSS (making a certain instance of a class in your HTML have a different text color for example)
+
+    say you wanted to use a class from your CSS file has has text defined as left alligned, but you want this one to be
+    right aligned, you can do this
+
+    <div class="something-or-other" style="align-items: right;">
+        
+        STUFF INSIDE THE SECTION GOES HERE, BUT RIGHT ALIGNED!
+
+        <p> defines a paragraph, kind of self explanatory, browsers add a blank line before and after <p></p>
+        you can also specify style in the <p> tag, the same way you did in <div>
+
+        <a> is our generic hyperlink tag, whenever you want to link something, wrap it in the <a> tag
+
+    </div>
+
+    This entire section can be omitted from your actual HTML files!
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,15 +38,17 @@
 <body>
     <main>
 
-
         <div class="container-main">
             <a class="return-button" href="index.html">🢦</a>
             <h2>PLACEHOLDER</h2> <!-- Write what you want the title of the page (header) to be here -->
             <div class="wrapper">
                 <div class="wrapper-image">
-                        <!-- Here is where you can add an image -->
-                        <!-- Place all image files in assets/Images/ -->
-                        <!-- Try to keep images small, as they are shrunk down to the container anyway, and large ones may load slowly -->
+                        <!-- 
+                            Here is where you can add an image
+                            Place all image files in assets/Images/
+                            Try to keep images small, as they are shrunk down to the container anyway, 
+                            and large ones may load slowly 
+                        -->
                         <img style="text-align: center;" src="assets/Images/IMAGE FILE NAME" alt="ALTERNATIVE GIVEN RENDERING ISSUES (text)">
                 </div>
                 <div class="wrapper-text">
@@ -28,7 +57,7 @@
                     <!-- Here is a separator for you, cut and paste wherever you want -->
                     <p>  ❀・・・❀・・・❀・・・❀・・・❀・・・❀   </p>
 
-                    <!-- Here are some buttons, the one with _target="blank" will open the link in a new tab! -->
+                    <!-- Here are some buttons, the one with target="_blank" will open the link in a new tab! -->
                     <p><a href="LINK GOES HERE">TEXT THAT APPEARS ON THE BUTTON</p>
                     <p><a href="LINK GOES HERE" target="_blank">TEXT THAT APPEARS ON THE BUTTON</a>
                 </div>
