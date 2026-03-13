@@ -43,6 +43,7 @@ main {
     border-style: ridge;
     border-radius: 5px;
     border-color: var(--barbie);
+    position: relative;
     
 }
 
@@ -62,7 +63,6 @@ p a:hover {
   border: 2px inset var(--barbie);
   border-radius: 4px;
   padding: 5px;
-
 }
 
 p a:visited {
@@ -101,6 +101,31 @@ p a:hover, p a:visited:hover {
     height: auto;
     border-radius: 5px; 
     border: 3px ridge var(--barbie);
+}
+
+.return-button {
+  display: flex;           
+  justify-content: center; 
+  align-items: center;     
+  width: 35px;
+  height: 25px;
+  text-decoration: none;
+  border-radius: 15px;
+  background-color: var(--butterflyMainBackground);
+  border: 2px inset var(--softMint);
+  color: var(--softMint);
+  font-size: 24px;
+  transition: all 0.2s ease;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.return-button:hover {
+  color: var(--butterflyMainBackground);
+  background-color: var(--barbie);
+  border: 2px inset var(--barbie);
+  border-radius: 4px;
+  padding: 5px;
 }
 
 footer {
