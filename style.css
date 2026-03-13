@@ -13,7 +13,7 @@ html, body {
 }
 
 body {
-    background: linear-gradient(rgba(44,39,48,0.7), rgba(44,39,48,0.7)), url("Backgrounds/artnuveau.jpg");
+    background: linear-gradient(rgba(44,39,48,0.7), rgba(44,39,48,0.7)), url("assets/Backgrounds/artnuveau.jpg");
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -40,8 +40,8 @@ main {
     margin: 20px 0;
     max-width: 900px;
     width: 90%;
-    border-style: double;
-    border-radius: 10px;
+    border-style: ridge;
+    border-radius: 5px;
     border-color: var(--barbie);
     
 }
@@ -50,14 +50,30 @@ p a {
   color: var(--powderBlue);
   text-decoration: none;
   font-weight: bold;
+  padding: 5px;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
 }
 
 p a:hover {
   color: var(--butterflyMainBackground);
   background-color: var(--barbie);
   text-decoration: none;
-  border-radius: 2px;
+  border: 2px inset var(--barbie);
+  border-radius: 4px;
+  padding: 5px;
 
+}
+
+p a:visited {
+  color: var(--softMint);
+  padding: 5px;
+
+}
+
+p a:hover, p a:visited:hover {
+    color: var(--butterflyMainBackground);
+    padding: 5px;
 }
 
 .wrapper {
@@ -83,8 +99,8 @@ p a:hover {
 .wrapper-image img {
     width: 100%; 
     height: auto;
-    border-radius: 10px; 
-    border: 3px double var(--barbie);
+    border-radius: 5px; 
+    border: 3px ridge var(--barbie);
 }
 
 footer {
