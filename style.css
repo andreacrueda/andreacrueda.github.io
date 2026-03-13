@@ -52,30 +52,29 @@ main {
 }
 
 p a {
-  color: var(--powderBlue);
-  text-decoration: none;
-  font-weight: bold;
-  padding: 5px;
-  transition: all 0.5s ease;
-  border: 2px solid transparent;
-  border-radius: 14px;
+    color: var(--powderBlue);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    transition: all 0.5s ease;
+    border: 2px solid transparent;
+    border-radius: 14px;
 }
 
 p a:hover {
-  color: var(--butterflyMainText);
-  text-decoration: none;
-  border: 2px ridge var(--barbie);
-  border-radius: 14px;
-  padding: 5px;
-  box-shadow:
-  0 0 40px rgba(0,0,0,0.6),
-  0 0 25px var(--lavenderMist);
+    color: var(--butterflyMainText);
+    text-decoration: none;
+    border: 2px ridge var(--barbie);
+    border-radius: 14px;
+    padding: 5px;
+    box-shadow:
+    0 0 40px rgba(0,0,0,0.6),
+    0 0 25px var(--lavenderMist);
 }
 
 p a:visited {
-  color: var(--softMint);
-  padding: 5px;
-
+    color: var(--softMint);
+    padding: 5px;
 }
 
 p a:hover, p a:visited:hover {
@@ -128,109 +127,115 @@ p a:hover, p a:visited:hover {
 }
 
 .hover-img-container {
-  position: relative;
-  max-width: 300px;
-  perspective: 1000px;
-  transition: transform .2s;
+    position: relative;
+    max-width: 300px;
+    perspective: 1000px;
+    transition: transform .2s;
 }
 
 .hover-img-container:hover img {
-  transition: 0.5s ease;
+    transition: 0.5s ease;
 }
 
 .hover-img-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 12px;
-  border: 3px ridge var(--barbie);
-  box-shadow:
-    0 20px 40px rgba(0,0,0,0.6),
-    0 10px 15px rgba(0,0,0,0.4);
-  transition: transform .7s cubic-bezier(0,0,0,1),
-              box-shadow 0.4s ease;
-  transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+    border: 3px ridge var(--barbie);
+    box-shadow:
+        0 20px 40px rgba(0,0,0,0.6),
+        0 10px 15px rgba(0,0,0,0.4);
+    transition: 
+        transform .7s 
+        cubic-bezier(0,0,0,1),
+        box-shadow 0.4s ease;
+    transform-style: preserve-3d;
 }
 
 .hover-img-container div {
-  position: absolute;
-  width: 50%;
-  height: 50%;
-  z-index: 2;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    z-index: 2;
 }
 
 .hover-img-container .top-left {
-  top: 0;
-  left: 0;
+    top: 0;
+    left: 0;
 }
 
 .hover-img-container .top-left:hover ~ img {
-  transform: rotate3d(-1, 1, 0, 15deg);
-  box-shadow: 30px 30px 40px rgba(0,0,0,0.6),
-              -30px -30px 80px var(--lavenderMist);
+    transform: rotate3d(-1, 1, 0, 15deg);
+    box-shadow: 
+        30px 30px 40px rgba(0,0,0,0.6),
+        -30px -30px 80px var(--lavenderMist);
 }
 .hover-img-container .top-right {
-  top: 0;
-  right: 0;
+    top: 0;
+    right: 0;
 }
 
 .hover-img-container .top-right:hover ~ img {
-  transform: rotate3d(-1, -1, 0, 15deg);
-  box-shadow: -30px 30px 50px rgba(0,0,0,0.6),
-              30px -30px 80px var(--lavenderMist);
+    transform: rotate3d(-1, -1, 0, 15deg);
+    box-shadow: 
+        -30px 30px 50px rgba(0,0,0,0.6),
+        30px -30px 80px var(--lavenderMist);
 }
 
 .hover-img-container .bottom-left {
-  bottom: 0;
-  left: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .hover-img-container .bottom-left:hover ~ img {
-  transform: rotate3d(1, 1, 0, 15deg);
-  box-shadow: 30px -30px 40px rgba(0,0,0,0.6),
-              -30px 30px 80px var(--lavenderMist);
+    transform: rotate3d(1, 1, 0, 15deg);
+    box-shadow: 
+        30px -30px 40px rgba(0,0,0,0.6),
+        -30px 30px 80px var(--lavenderMist);
 }
 
 .hover-img-container .bottom-right {
-  bottom: 0;
-  right: 0;
+    bottom: 0;
+    right: 0;
 }
 
 .hover-img-container .bottom-right:hover ~ img {
-  transform: rotate3d(1, -1, 0, 15deg);
-  box-shadow: -30px -30px 50px rgba(0,0,0,0.6),
-              30px 30px 80px var(--lavenderMist);
+    transform: rotate3d(1, -1, 0, 15deg);
+    box-shadow: 
+        -30px -30px 50px rgba(0,0,0,0.6),
+        30px 30px 80px var(--lavenderMist);
 }
 
 .return-button {
-  display: flex;           
-  justify-content: center; 
-  align-items: center;     
-  width: 35px;
-  height: 25px;
-  text-decoration: none;
-  border-radius: 15px;
-  background-color: var(--butterflyMainBackground);
-  border: 2px ridge var(--softMint);
-  color: var(--softMint);
-  font-size: 24px;
-  transition: all 0.2s ease;
-  padding: 5px;
-  font-weight: bold;
-  box-shadow:
-  2px 2px 10px rgba(0,0,0,0.6);
+    display: flex;           
+    justify-content: center; 
+    align-items: center;     
+    width: 35px;
+    height: 25px;
+    text-decoration: none;
+    border-radius: 15px;
+    background-color: var(--butterflyMainBackground);
+    border: 2px ridge var(--softMint);
+    color: var(--softMint);
+    font-size: 24px;
+    transition: all 0.2s ease;
+    padding: 5px;
+    font-weight: bold;
+    box-shadow:
+    2px 2px 10px rgba(0,0,0,0.6);
 }
 
 .return-button:hover {
-  color: var(--barbie);
-  background-color: var(--butterflyMainBackground);
-  border: 2px ridge var(--barbie);
-  border-radius: 4px;
-  padding: 5px;
-  box-shadow:
-  0 0 40px rgba(0,0,0,0.6),
-  0 0 25px var(--lavenderMist);
+    color: var(--barbie);
+    background-color: var(--butterflyMainBackground);
+    border: 2px ridge var(--barbie);
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow:
+    0 0 40px rgba(0,0,0,0.6),
+    0 0 25px var(--lavenderMist);
 }
 
 footer {
