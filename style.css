@@ -56,16 +56,15 @@ p a {
   text-decoration: none;
   font-weight: bold;
   padding: 5px;
-  transition: all 0.1s ease;
+  transition: all 0.5s ease;
   border: 2px solid transparent;
   border-radius: 14px;
 }
 
 p a:hover {
-  color: var(--butterflyMainBackground);
-  background-color: var(--barbie);
+  color: var(--butterflyMainText);
   text-decoration: none;
-  border: 2px inset var(--barbie);
+  border: 2px ridge var(--barbie);
   border-radius: 14px;
   padding: 5px;
   box-shadow:
@@ -80,7 +79,7 @@ p a:visited {
 }
 
 p a:hover, p a:visited:hover {
-    color: var(--butterflyMainBackground);
+    color: var(--barbie);
     padding: 5px;
     box-shadow:
     0 0 40px rgba(0,0,0,0.6),
@@ -115,6 +114,17 @@ p a:hover, p a:visited:hover {
     box-shadow:
     0 20px 40px rgba(0,0,0,0.6),
     0 10px 15px rgba(0,0,0,0.4);
+    transition: all 0.5s ease;
+}
+
+.wrapper-image img:hover {
+    width: 100%; 
+    height: auto;
+    border-radius: 5px; 
+    border: 3px ridge var(--barbie);
+    box-shadow:
+    0 20px 40px rgba(0,0,0,0.6),
+    0 0 25px var(--lavenderMist);
 }
 
 .hover-img-container {
@@ -202,7 +212,7 @@ p a:hover, p a:visited:hover {
   text-decoration: none;
   border-radius: 15px;
   background-color: var(--butterflyMainBackground);
-  border: 2px inset var(--softMint);
+  border: 2px ridge var(--softMint);
   color: var(--softMint);
   font-size: 24px;
   transition: all 0.2s ease;
@@ -213,9 +223,9 @@ p a:hover, p a:visited:hover {
 }
 
 .return-button:hover {
-  color: var(--butterflyMainBackground);
-  background-color: var(--barbie);
-  border: 2px inset var(--barbie);
+  color: var(--barbie);
+  background-color: var(--butterflyMainBackground);
+  border: 2px ridge var(--barbie);
   border-radius: 4px;
   padding: 5px;
   box-shadow:
